@@ -30,7 +30,7 @@ def create_chapters_for_titls(title):
                                       ])
     value = response.text
     # removing backticks bcz in value we are getting in markdown formate ```{}``` in markdown you will get code in between ``````
-    newValue = value.replace('```', '')
+    newValue = value.replace("json", '')
     # storing json data
     store_file("chapters.json", 'w', newValue)
 
